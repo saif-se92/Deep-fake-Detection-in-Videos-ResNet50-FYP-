@@ -1,0 +1,173 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    width: 420px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input {
+    margin: 15px 0;
+}
+
+button {
+    padding: 10px 25px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+video {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.real {
+    color: green;
+}
+
+.fake {
+    color: red;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+
+    /* Background Image */
+    background: url("../static/bg.png") no-repeat center center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Dark overlay effect */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: -1;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+
+    padding: 30px;
+    width: 420px;
+    text-align: center;
+
+    border-radius: 16px;
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+    color: white;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+input {
+    margin: 15px 0;
+    color: white;
+}
+
+button {
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #1e40af, #172554);
+}
+
+video {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+/* Result Box */
+.result {
+    margin-top: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+/* REAL Result Box */
+.real {
+    background: rgba(34, 197, 94, 0.2);
+    color: #4ade80;
+    border: 1px solid #22c55e;
+}
+
+/* FAKE Result Box */
+.fake {
+    background: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+    border: 1px solid #ef4444;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #93c5fd;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}

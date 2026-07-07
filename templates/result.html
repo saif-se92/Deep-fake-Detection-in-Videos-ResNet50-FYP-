@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detection Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Result</h2>
+
+    <video controls>
+        <source src="{{ video_path }}">
+    </video>
+
+    {% if prediction == "REAL" %}
+        <p class="result real">✅ REAL VIDEO</p>
+    {% else %}
+        <p class="result fake">❌ FAKE VIDEO</p>
+    {% endif %}
+
+    <p>Confidence: {{ confidence }}%</p>
+
+    <a href="/">Check Another Video</a>
+</div>
+
+</body>
+</html>
